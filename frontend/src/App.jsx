@@ -1,15 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/book.png'
 import './App.css'
-import OnlineBookStoreSignUp from './pages/Authentication/signup.jsx';
+import Signup from './pages/Authentication/signup.jsx';
+import Login from './pages/Authentication/login.jsx';
+
+import OrganizationContactForm from './pages/Authentication/form.jsx';
 
 function App() {
 
   return (
-    <>
-    <OnlineBookStoreSignUp />
-    </>
+    <Router>
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/login" element={<Login/>} />
+      </Routes>
+    </Router>
   )
 }
 

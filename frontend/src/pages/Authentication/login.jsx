@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Signup = () => {
+const Login = () => {
   // Define the target endpoint for the Tomcat server
   const TOMCAT_SERVER_URL = 'http://localhost:8080/api/signup'; // <-- Change this to your actual Tomcat endpoint
 
@@ -66,7 +66,7 @@ const Signup = () => {
         {/* Right Sign-Up Form Area */}
         <form onSubmit={handleSubmit} className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
           <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
-            Sign Up
+            Log In
           </h2>
           
           {/* Email Input Field */}
@@ -114,13 +114,13 @@ const Signup = () => {
             className="text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-800 rounded text-lg disabled:opacity-50"
             disabled={isLoading} // Disable button while loading
           >
-            {isLoading ? 'Signing Up...' : 'Sign Up'}
+            {isLoading ? 'Logging in...' : 'Log in'}
           </button>
           
           <p className="text-xs text-gray-500 mt-3">
-            Have an account?{' '}
-            <a href="/login" className="text-blue-600 hover:underline">
-              Log in
+            Create an account?{' '}
+            <a href="/signup" className="text-blue-600 hover:underline">
+              Signup
             </a>
           </p>
         </form>
@@ -129,4 +129,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
