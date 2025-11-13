@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 public class Cors implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/title/**")
+        registry.addMapping("/**")
                 .allowedOrigins("http://localhost:5173")
-                .allowedMethods("GET");
+                .allowedMethods("*");
     }
 }

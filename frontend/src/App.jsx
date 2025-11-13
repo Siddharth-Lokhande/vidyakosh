@@ -15,17 +15,14 @@ import Product from "./pages/product/product.jsx";
 function App() {
 
   return (
-    <>
-    <Dashboard />
-    <Product/>
-    </>
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<SearchBar />} />
-    //     <Route path="/signup" element={<Signup/>} />
-    //     <Route path="/login" element={<Login/>} />
-    //   </Routes>
-    // </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SearchBar />} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/product" element={<Product />} />
+      </Routes>
+    </Router>
   )
 }
 
