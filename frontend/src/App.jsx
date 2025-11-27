@@ -11,15 +11,16 @@ import Dashboard from "./pages/Dashboard/dashboard.jsx";
 import Trending from "./pages/Dashboard/trending.jsx";
 import Browse from "./pages/Dashboard/browse.jsx";
 import Product from "./pages/product/product.jsx";
+import Start from "./pages/starting/start.jsx";
 
 function App() {
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SearchBar />} />
-        <Route path="/signup" element={<Signup/>} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/" element={<Start />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/product" element={<Product />} />
       </Routes>
     </Router>
