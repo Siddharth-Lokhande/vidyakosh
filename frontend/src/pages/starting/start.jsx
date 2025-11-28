@@ -6,10 +6,10 @@ const Start = () => {
     const [showAbout, setShowAbout] = useState(false);
 
     const books = [
-        { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", price: "399", image: "https://placehold.co/400x600/1e293b/ffffff?text=Great+Gatsby" },
-        { id: 2, title: "To Kill a Mockingbird", author: "Harper Lee", price: "499", image: "https://placehold.co/400x600/1e293b/ffffff?text=Mockingbird" },
-        { id: 3, title: "1984", author: "George Orwell", price: "299", image: "https://placehold.co/400x600/1e293b/ffffff?text=1984" },
-        { id: 4, title: "Pride and Prejudice", author: "Jane Austen", price: "349", image: "https://placehold.co/400x600/1e293b/ffffff?text=Pride+Prejudice" },
+        { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", price: "399", image: "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg" },
+        { id: 2, title: "To Kill a Mockingbird", author: "Harper Lee", price: "499", image: "https://covers.openlibrary.org/b/isbn/9780446310789-L.jpg" },
+        { id: 3, title: "1984", author: "George Orwell", price: "299", image: "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg" },
+        { id: 4, title: "Pride and Prejudice", author: "Jane Austen", price: "349", image: "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg" },
     ];
 
     const handleBookClick = () => {
@@ -144,7 +144,7 @@ const Start = () => {
                             <ul className="space-y-4 text-gray-400">
                                 <li>Email: support@vidyakosh.com</li>
                                 <li>Phone: +91 123 456 7890</li>
-                                <li>Address: Knowledge Park, Digital City</li>
+                                <li>Address: pune</li>
                             </ul>
                         </div>
                         <div>
@@ -162,7 +162,7 @@ const Start = () => {
                         </div>
                     </div>
                     <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-                        © 2024 VidyaKosh. All rights reserved.
+                        © 2025 VidyaKosh. All rights reserved.
                     </div>
                 </div>
             </footer>

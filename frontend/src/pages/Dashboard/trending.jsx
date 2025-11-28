@@ -1,34 +1,35 @@
 import React from 'react';
+
 const Trending = () => {
   // Data for the content cards. In a real app, this might come from an API.
   const cardData = [
     {
-      imgSrc: "https://placehold.co/720x400/6366f1/ffffff?text=Ancient+Ruins",
-      imgAlt: "Placeholder image of ancient ruins",
-      subtitle: "ANCIENT RUINS",
-      title: "Chichen Itza",
-      description: "Explore the mysteries of the Mayan civilization and the iconic El Castillo pyramid."
+      imgSrc: "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
+      imgAlt: "The Alchemist Book Cover",
+      subtitle: "FICTION",
+      title: "The Alchemist",
+      description: "Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure."
     },
     {
-      imgSrc: "https://placehold.co/721x401/6366f1/ffffff?text=Historic+Landmark",
-      imgAlt: "Placeholder image of the Colosseum in Rome",
-      subtitle: "HISTORIC LANDMARK",
-      title: "Colosseum, Rome",
-      description: "Step back in time to the era of gladiators in this magnificent ancient arena."
+      imgSrc: "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
+      imgAlt: "Atomic Habits Book Cover",
+      subtitle: "SELF-HELP",
+      title: "Atomic Habits",
+      description: "No matter your goals, Atomic Habits offers a proven framework for improving--every day."
     },
     {
-      imgSrc: "https://placehold.co/722x402/6366f1/ffffff?text=World+Wonder",
-      imgAlt: "Placeholder image of the Great Pyramid of Giza",
-      subtitle: "WORLD WONDER",
-      title: "Great Pyramid of Giza",
-      description: "Marvel at the last of the Seven Wonders of the Ancient World, an icon of Egypt."
+      imgSrc: "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
+      imgAlt: "The Psychology of Money Book Cover",
+      subtitle: "FINANCE",
+      title: "The Psychology of Money",
+      description: "Timeless lessons on wealth, greed, and happiness doing well with money isn't necessarily about what you know. It's about how you behave."
     },
     {
-      imgSrc: "https://placehold.co/723x403/6366f1/ffffff?text=Modern+City",
-      imgAlt: "Placeholder image of the Golden Gate Bridge",
-      subtitle: "MODERN CITY",
-      title: "San Francisco",
-      description: "Discover the iconic Golden Gate Bridge, cable cars, and vibrant culture."
+      imgSrc: "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg",
+      imgAlt: "Rich Dad Poor Dad Book Cover",
+      subtitle: "FINANCE",
+      title: "Rich Dad Poor Dad",
+      description: "Robert Kiyosaki's story of growing up with two dads — his real father and the father of his best friend, his rich dad — and the ways in which both men shaped his thoughts about money and investing."
     }
   ];
 
@@ -39,7 +40,7 @@ const Trending = () => {
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-white">
-              Trending Books 
+              Trending Books
             </h1>
             <div className="h-1 w-20 bg-indigo-500 rounded"></div>
           </div>
@@ -59,7 +60,7 @@ const Trending = () => {
                   alt={card.imgAlt}
                   onError={(e) => {
                     // Fallback in case the placeholder service fails
-                    e.target.onerror = null; 
+                    e.target.onerror = null;
                     e.target.src = `https://placehold.co/720x400/333/fff?text=Image+Error`;
                   }}
                 />
